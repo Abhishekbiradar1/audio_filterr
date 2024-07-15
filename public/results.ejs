@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Processing Results</title>
+</head>
+<body>
+    <h1>Processing Results</h1>
+    <h2>Filtered Audio</h2>
+    <audio controls>
+        <source src="<%= outputFiles.filteredAudio %>" type="audio/wav">
+        Your browser does not support the audio tag.
+    </audio>
+    
+    <h2>Plots</h2>
+    <h3>Original Signal</h3>
+    <img src="<%= outputFiles.originalPlot %>" alt="Original Signal">
+    
+    <h3>Magnitude of Fourier Transform</h3>
+    <img src="<%= outputFiles.fftMagnitudePlot %>" alt="FFT Magnitude">
+    
+    <h3>Filtered Magnitude of Fourier Transform</h3>
+    <img src="<%= outputFiles.filteredFFTPlot %>" alt="Filtered FFT Magnitude">
+    
+    <h3>Filtered Signal</h3>
+    <img src="<%= outputFiles.filteredSignalPlot %>" alt="Filtered Signal">
+</body>
+</html>
